@@ -20,22 +20,23 @@ def app():
 
      # st.text(title.replace(' ', '+'))
     # st.title
-    st.markdown("""
-    ### Description of the Task:
-    *Sentiment analysis* (also known as *opinion mining* or *emotion AI*) is the use of natural language 
-    processing, text analysis, computational linguistics, and biometrics to systematically identify, extract, quantify, 
-    and study affective states and subjective information. Commonly, this takes the form of Sentiment analysis is widely
-     applied to voice of the customer materials such as reviews and survey responses, online and social media, and 
-     healthcare materials for applications that range from marketing to customer service to clinical medicine.  
-       
-     ### Description of the Output:  
-     Sentiment Analysis packages will output a score from -1 to 1. Text with lots of negative words will be closer to -1,
-      while positive text will be closer to +1. Neutral text would be 0. Often, python packages will split these scores
-       into several sub-scores: *Polarity* and *Subjectivity* are common components.
-     """)
+    with st.expander("See Explanation"):
+        st.markdown("""
+        ### Description of the Task:
+        *Sentiment analysis* (also known as *opinion mining* or *emotion AI*) is the use of natural language 
+        processing, text analysis, computational linguistics, and biometrics to systematically identify, extract, quantify, 
+        and study affective states and subjective information. Commonly, this takes the form of Sentiment analysis is widely
+         applied to voice of the customer materials such as reviews and survey responses, online and social media, and 
+         healthcare materials for applications that range from marketing to customer service to clinical medicine.  
+           
+         ### Description of the Output:  
+         Sentiment Analysis packages will output a score from -1 to 1. Text with lots of negative words will be closer to -1,
+          while positive text will be closer to +1. Neutral text would be 0. Often, python packages will split these scores
+           into several sub-scores: *Polarity* and *Subjectivity* are common components.
+         """)
 
-    st.text("")
-    text = st.text_input("Put some text in the box below, to give Sentiment Analysis a test drive!")
+    # st.text("")
+    text = st.text_area("Put some text in the box below, to give Sentiment Analysis a test drive!")
     Analyzer = st.radio(
         "Select a python package to perform the analysis",
         ('TextBlob', 'VADER'))
