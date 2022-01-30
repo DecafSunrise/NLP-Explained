@@ -3,7 +3,8 @@ from multiapp import MultiApp
 from apps import (
     home,
     Sentiment_Analysis,
-    Keyword_Extraction)
+    Keyword_Extraction,
+    Text_Summarization)
 # st.set_page_config()
 st.set_page_config(page_title="NLP for Me", page_icon="📜", layout="wide")
 
@@ -14,10 +15,7 @@ apps = MultiApp()
 apps.add_app("Home", home.app)
 apps.add_app("Sentiment Analysis", Sentiment_Analysis.app)
 apps.add_app("Keyword Extraction", Keyword_Extraction.app)
-# apps.add_app("Plot a CSV on the map", Map_Plotter.app)
-# apps.add_app("Monitor OLS News", OLS_Monitor.app)
-# apps.add_app("Network Explorer", Network_Explorer.app)
-
+apps.add_app("Text Summarization", Text_Summarization.app)
 
 # The main app
 apps.run()

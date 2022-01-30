@@ -51,9 +51,10 @@ class MultiApp:
         titles = [a["title"] for a in self.apps]
         functions = [a["function"] for a in self.apps]
         default_radio = titles.index(app_state["page"]) if "page" in app_state else 0
-        # st.sidebar.image("Autism on Wheels.png")
-        # st.sidebar.image("logo.png")
-        st.sidebar.title("Navigation")
+
+        st.sidebar.image("Logo.png")
+        st.sidebar.title("NLP Explained")
+        # st.sidebar.header("Navigation")
 
         title = st.sidebar.radio("Go To", titles, index=default_radio, key="radio")
         # st.sidebar.title("Contribute")

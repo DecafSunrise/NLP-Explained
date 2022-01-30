@@ -1,12 +1,7 @@
 import streamlit as st
 import webbrowser
-import re
 import yake
 
-from textblob import TextBlob
-
-
-# https://lmgtfy.app/?q=sentiment+analysis
 def app():
     title = st.title("Keyword Extraction")
     row1_col1, row1_col2, row1_col3, row1_col4, row1_col5, row1_col6, row1_col7, row1_col8 = st.columns(8)
