@@ -1,3 +1,4 @@
+nltk==3.6.7
 streamlit==1.4.0
 textblob==0.17.1
 vaderSentiment==3.3.2

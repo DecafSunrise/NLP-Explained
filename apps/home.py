@@ -7,8 +7,7 @@ def app():
 
     st.markdown(
         """
-        This multi-page web app demonstrates various interactive web apps created using [streamlit](https://streamlit.io) and open-source mapping libraries, 
-        such as [leafmap](https://leafmap.org), [geemap](https://geemap.org), [pydeck](https://deckgl.readthedocs.io), and [kepler.gl](https://docs.kepler.gl/docs/keplergl-jupyter).
+        This web app demonstrates various Natural Language Processing (NLP) techniques.
         """
     )
 
