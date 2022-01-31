@@ -7,7 +7,7 @@ from apps import (
     Text_Summarization,
     NER)
 # st.set_page_config()
-st.set_page_config(page_title="NLP for Me", page_icon="📜", layout="wide")
+st.set_page_config(page_title="NLP Explained", page_icon="📜", layout="wide")
 
 
 apps = MultiApp()
