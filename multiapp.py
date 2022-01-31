@@ -69,11 +69,10 @@ class MultiApp:
         # st.experimental_set_query_params(**st.session_state.to_dict())
         functions[titles.index(title)]()
 
-        # st.sidebar.title("About")
-        # st.sidebar.info(
-        #     """
-        #     This web [app](https://share.streamlit.io/giswqs/streamlit-geospatial/app.py) is maintained by [Qiusheng Wu](https://wetlands.io). You can follow me on social media:
-        #      [GitHub](https://github.com/giswqs) | [Twitter](https://twitter.com/giswqs) | [YouTube](https://www.youtube.com/c/QiushengWu) | [LinkedIn](https://www.linkedin.com/in/qiushengwu).
-        #     This web app URL: <https://streamlit.gishub.org>
-        # """
-        # )
+        st.sidebar.title("About")
+        st.sidebar.info(
+            """
+            Want to take a look under the hood? Check it out on
+             [GitHub](https://github.com/DecafSunrise/NLP-Explained)
+        """
+        )
