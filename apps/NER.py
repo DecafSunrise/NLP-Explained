@@ -55,7 +55,7 @@ def app():
          """)
 
     # st.text("")
-    text = st.text_area("Put some text in the box below, to give Keyword Extraction a test drive!")
+    text = st.text_area("Put some text in the box below, to give Named Entity Recognition a go!")
 
     if st.button("Run"):
         doc = nlp(text)
